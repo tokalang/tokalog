@@ -1,0 +1,8 @@
+import std/io::{println}
+import std/string::{String}
+
+pub fn log_info(msg: String) {
+    auto out# = String::from("[INFO] ")
+    out#.push_str(msg.as_view())
+    println("{}", out.as_view())
+}
