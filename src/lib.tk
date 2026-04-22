@@ -3,6 +3,6 @@ import std/string::{String}
 
 pub fn log_info(msg: String) {
     auto out# = String::from("[INFO] ")
-    out#.push_str(msg.as_view())
+    out#.push_str(msg.c_str())
     println("{}", out.as_view())
 }
